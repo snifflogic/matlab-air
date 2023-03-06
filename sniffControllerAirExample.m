@@ -1,10 +1,13 @@
+% Example script demonstrating usage of the Air class to communicate with
+% Sniff Controller Air device.
+
 %% scan for ble devices
 blelist;
 
 %% create Air object
 a = Air();
 
-%% connect to device
+%% connect to device - change to different name/address if necessary
 a = a.connect("Air");
 % make sure that LED in AIR is constant and not blinking before continuing
 
